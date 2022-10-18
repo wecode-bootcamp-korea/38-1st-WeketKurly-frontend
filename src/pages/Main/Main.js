@@ -1,13 +1,15 @@
 import React from 'react';
 import Nav from '../../components/Nav/Nav';
-import Item from '../../components/Item/Item';
 import './Main.scss';
+import MainCarousel from './MainCarousel/MainCarousel';
+import MainItemList from './MainItemList/MainItemList';
 
 const Main = () => {
   return (
     <div>
       <Nav />
-      <Item />
+      <MainCarousel />
+      <MainItemList />
     </div>
   );
 };
