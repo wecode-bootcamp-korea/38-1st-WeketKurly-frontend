@@ -1,12 +1,75 @@
 @import '../../styles/variables.scss';
 
+.disItemContainer {
+  position: relative;
+  width: 340px;
+  height: 535px;
+  cursor: pointer;
+
+  .disItemImg {
+    width: 338px;
+    height: 434px;
+  }
+
+  .disItemIconBox {
+    @include flex(center, center, null);
+    position: absolute;
+    bottom: 120px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    background-color: rgb(109, 86, 115);
+    opacity: 0.7;
+  }
+
+  .disItemIcon {
+    color: white;
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+  }
+
+  .disItemSpecialBox {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 67px;
+    height: 32px;
+    opacity: 0.9;
+    background-color: rgb(189, 118, 255);
+  }
+
+  .disItemSpecialText {
+    font-size: 14px;
+    line-height: 1.43px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 16px;
+    color: rgb(255, 255, 255);
+  }
+
+  .disItemDescription {
+    font-size: 18px;
+    line-height: 1.45;
+    letter-spacing: -0.05;
+    font-weight: 400;
+    margin: 10px 0;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .disItemPrice {
+    font-size: 20px;
+    line-height: 1.45;
+    font-weight: 700;
+  }
+}
+
 .itemContainer {
   position: relative;
   width: 252px;
   min-height: 412px;
-  border: 1px solid black;
-  margin-top: 200px;
-  margin-left: 100px;
   cursor: pointer;
 
   .itemImg {

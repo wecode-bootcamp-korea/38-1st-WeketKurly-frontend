@@ -1,0 +1,36 @@
+{
+  "list": [
+    {
+      "id": 1,
+      "name": "[돈마루] 한돈 삼겹살 2종 (냉장)",
+      "discount_rate": 5,
+      "discounted_price": 12967,
+      "original_price": 13650,
+      "is_sold_out": false
+    },
+    {
+      "id": 2,
+      "name": "[돈마루] 한돈 삼겹살 2종 (냉장)",
+      "discount_rate": 5,
+      "discounted_price": 12967,
+      "original_price": 13650,
+      "is_sold_out": false
+    },
+    {
+      "id": 3,
+      "name": "[돈마루] 한돈 삼겹살 2종 (냉장)",
+      "discount_rate": 5,
+      "discounted_price": 12967,
+      "original_price": 13650,
+      "is_sold_out": false
+    },
+    {
+      "id": 4,
+      "name": "[돈마루] 한돈 삼겹살 2종 (냉장)",
+      "discount_rate": 5,
+      "discounted_price": 12967,
+      "original_price": 13650,
+      "is_sold_out": false
+    }
+  ]
+}

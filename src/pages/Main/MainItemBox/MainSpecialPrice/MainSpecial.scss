@@ -1,0 +1,46 @@
+@import '../../../../styles/variables.scss';
+
+.specialPriceContainer {
+  @include flex(space-between, null, null);
+  width: 1050px;
+  height: 700px;
+
+  .specialTimeBox {
+    width: 300px;
+    height: 500px;
+  }
+
+  .specialDailyText {
+    font-size: 26px;
+    color: rgb(51, 51, 51);
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.26px;
+    margin-bottom: 10px;
+  }
+
+  .specialGrayText {
+    font-size: 16px;
+    color: rgb(153, 153, 153);
+    font-weight: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    margin-bottom: 24px;
+  }
+
+  .specialLgrayText {
+    font-size: 14px;
+    color: rgb(204, 204, 204);
+    font-weight: normal;
+    line-height: 1.43;
+    letter-spacing: -0.4px;
+    margin-top: 32px;
+  }
+
+  .specialTimer {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.43;
+    letter-spacing: -0.4px;
+  }
+}
