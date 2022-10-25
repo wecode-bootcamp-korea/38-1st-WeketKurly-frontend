@@ -8,7 +8,6 @@ import Main from './pages/Main/Main';
 import Detail from './pages/Detail/Detail';
 import Mypage from './pages/Mypage/Mypage';
 import Cart from './pages/Cart/Cart';
-import Wishlist from './pages/Wishlist/Wishlist';
 
 const Router = () => {
   return (
@@ -20,7 +19,6 @@ const Router = () => {
         <Route path="/detail" element={<Detail />} />x
         <Route path="/mypage" element={<Mypage />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/wishlist" element={<Wishlist />} />
       </Routes>
     </BrowserRouter>
   );
