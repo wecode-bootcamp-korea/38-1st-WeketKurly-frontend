@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import '../../styles/variables.scss';
+
+.signupContainer {
+  align-items: center;
+  min-width: 1050px;
+  padding: 50px 0px;
+  background-color: $white-color;
+
+  .topSignupLetter {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 28px;
+    line-height: 35px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    color: $text-color;
+  }
+
+  .topRequired {
+    @include flex(right, right);
+    padding-bottom: 10px;
+    border-bottom: 2px solid $text-color;
+    font-size: 12px;
+    color: $disabled-color;
+    line-height: 17px;
+  }
+
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    width: 640px;
+    margin: 0px auto;
+
+    .eachContainer {
+      display: inline-flex;
+      align-items: center;
+      width: 100%;
+      padding: 15px 20px;
+      .containerTitle {
+        text-align: left;
+        width: 139px;
+        padding-top: 12px;
+      }
+
+      .inputContainer {
+        position: relative;
+        .signupInputBox {
+          padding: 0 11px 1px 15px;
+          width: 333px;
+          height: 46px;
+          border: 1px solid $line-color;
+          border-radius: 4px;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 1.5;
+          color: $text-color;
+          &:focus {
+            outline: transparent;
+            border: 1px solid #000000;
+          }
+        }
+      }
+
+      .warningText {
+        display: flex;
+        position: absolute;
+        margin-top: 6px;
+        bottom: -18px;
+        color: #f03f40;
+        font-size: 13px;
+      }
+
+      .duplicationCheckButton {
+        display: block;
+        text-align: center;
+        margin-left: 8px;
+        padding: 0px 10px;
+        overflow: hidden;
+        width: 120px;
+        height: 44px;
+        background-color: $white-color;
+        border: 1px solid $primary-color;
+        border-radius: 3px;
+        .duplicationCheckButtonText {
+          color: $primary-color;
+          font-weight: 500;
+          font-size: 14px;
+        }
+      }
+
+      .choiceContainer {
+        display: flex;
+        justify-content: space-between;
+        width: 333px;
+        padding: 12px 0px 9px;
+        .male {
+          @include flex(space-between, center);
+          width: 62px;
+          margin-right: 50px;
+        }
+
+        .female {
+          @include flex(space-between, center);
+          width: 62px;
+          margin-right: 50px;
+        }
+
+        .genderChoiceButton {
+          accent-color: $primary-color;
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          background-color: $white-color;
+          border: 1px solid $line-color;
+        }
+      }
+
+      .birthInputContainer {
+        @include flex(center, center);
+        padding: 0 15px;
+        height: 44px;
+        width: 333px;
+        border: 1px solid #cccccc;
+        border-radius: 3px;
+        .birthInput {
+          text-align: center;
+          width: 100%;
+          height: 40px;
+          border: none;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 38px;
+          color: $text-color;
+          outline: none;
+          .birthInputSeparatorSlash {
+            text-align: center;
+            font-size: 14px;
+            color: #cccccc;
+            line-height: 40px;
+          }
+        }
+      }
+      .recommendContainer {
+        @include flex(space-between, center);
+        width: 118px;
+        padding: 12px 0px 9px;
+      }
+    }
+  }
+  .requiredSymbol {
+    color: #ee6a7b;
+    margin: 0 2px;
+  }
+
+  .bottomSeparatorBar {
+    padding: 10px 0px;
+    border-bottom: 1px solid $text-color;
+  }
+
+  .signupSubmitButtonContainer {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    .signupSubmitButton {
+      text-align: center;
+      overflow: hidden;
+      width: 240px;
+      height: 56px;
+      background-color: $primary-color;
+      color: $white-color;
+      border: 0px none;
+      border-radius: 3px;
+      .signupSubmitButtonText {
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+  }
+}

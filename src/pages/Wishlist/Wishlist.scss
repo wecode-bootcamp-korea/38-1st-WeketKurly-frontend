@@ -1,0 +1,89 @@
+@import '../../styles/variables.scss';
+
+body {
+  background-color: $white-color;
+}
+.wishlistContainer {
+  align-items: center;
+  width: 820px;
+  margin: 0px auto;
+  padding-bottom: 80px;
+}
+
+.wishlistTitle {
+  padding: 50px 0px 48px;
+  text-align: center;
+  line-height: 35px;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.maximumGuideText {
+  text-align: right;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: $gray-color;
+}
+
+.wishlistMainContainer {
+  width: 820px;
+  border-top: 1px solid #333333;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.wishlistEachContainer {
+  display: flex;
+  height: 128px;
+  padding: 24px 30px;
+  border-top: 1px solid $lightLine-color;
+  .wishItemImage {
+    width: 60px;
+    height: 78px;
+    border: 1px solid $gray-color;
+  }
+  .wishItemContainer {
+    @include flex(space-between, center);
+    width: 700px;
+    .wishItemInfo {
+      padding: 0px 20px;
+      .wishItemInfoName {
+        font-size: 16px;
+        line-height: normal;
+      }
+      .wishItemInfoCost {
+        margin-top: 6px;
+        margin-right: 4px;
+        line-height: 19px;
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+  }
+  .wishlistButtons {
+    display: flex;
+    flex-direction: column;
+    .wishlistDeleteButton {
+      margin: 5px 5px;
+      width: 104px;
+      height: 36px;
+      border-radius: 4px;
+      background-color: $white-color;
+      color: $text-color;
+      border: 1px solid $line-color;
+    }
+    .wishlistCartButton {
+      @include flex(center, center);
+      margin: 5px 5px;
+      width: 104px;
+      height: 36px;
+      border-radius: 4px;
+      background-color: $white-color;
+      color: $primary-color;
+      border: 1px solid $primary-color;
+      .wishlistCartIcon {
+        margin: 0px 2px;
+      }
+    }
+  }
+}
