@@ -1,0 +1,35 @@
+@import '/src/styles/variables';
+
+.sortBox {
+  width: 100%;
+  padding-bottom: 20px;
+  @include flex(space-between, center, row);
+  font-size: 14px;
+  line-height: 20px;
+
+  .totalCount {
+    color: rgb(51, 51, 51);
+    font-weight: 800;
+  }
+
+  .sortTypes {
+    @include flex(null, center, row);
+    list-style-type: none;
+    cursor: pointer;
+
+    .sortType {
+      display: inline;
+      padding: 5px;
+    }
+
+    .selected {
+      color: #333;
+      cursor: default;
+    }
+
+    .notselected {
+      color: rgb(153, 153, 153);
+      cursor: pointer;
+    }
+  }
+}

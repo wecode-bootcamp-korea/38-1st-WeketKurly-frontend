@@ -1,0 +1,24 @@
+@import '/src/styles/variables';
+
+.productDetailsContainer {
+  width: 100%;
+  height: auto;
+  margin: 40px 0 40px 0;
+  text-align: center;
+  @include flex(null, center, column);
+
+  .itemImageDetail {
+    width: 100%;
+    margin-bottom: 45px;
+  }
+
+  .nameOnDescription {
+    color: $text-color;
+    @include font(30px, 1.5, normal, 800);
+  }
+
+  .shortDescription {
+    color: $text-color;
+    @include font(20px, 1.5, normal, 500);
+  }
+}

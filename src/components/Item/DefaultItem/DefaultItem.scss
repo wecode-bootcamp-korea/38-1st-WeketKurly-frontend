@@ -1,0 +1,45 @@
+@import '../../../styles/variables';
+
+.itemContainer {
+  position: relative;
+  width: 252px;
+  min-height: 412px;
+  cursor: pointer;
+
+  .itemImg {
+    width: 250px;
+    height: 320px;
+  }
+
+  .itemIconBox {
+    @include flex(center, center, null);
+    @include position(absolute, null, 15px, 105px, null);
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    opacity: 0.7;
+    background-color: $subPrimary-color;
+  }
+
+  .itemDescription {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.05;
+    line-height: 1.45;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .itemPrice {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.45;
+  }
+
+  .reactIcon {
+    width: 23px;
+    height: 23px;
+    color: $white-color;
+  }
+}

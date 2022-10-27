@@ -1,0 +1,35 @@
+@import '../../../styles/variables';
+
+.filters-wrapper {
+  width: 1050px;
+  margin-bottom: 30px;
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(4, 180px);
+    margin-top: 28px;
+    padding: 30px 40px;
+    overflow: hidden;
+    border: 1px solid rgb(226, 226, 226);
+    gap: 16px 83px;
+    line-height: 20px;
+
+    li {
+      display: list-item;
+      overflow: hidden;
+      background-color: transparent;
+      font-size: 14px;
+      letter-spacing: -1px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      cursor: pointer;
+
+      .boldness,
+      &:hover {
+        color: $primary-color;
+        font-weight: 800;
+        text-decoration: none;
+      }
+    }
+  }
+}

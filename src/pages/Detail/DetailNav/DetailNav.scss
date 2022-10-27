@@ -1,0 +1,33 @@
+@import '/src/styles/variables';
+
+.detailNavigator {
+  position: sticky;
+  z-index: 20;
+  top: 156px;
+  width: 1050px;
+  margin-top: 50px;
+
+  .navigatorContainer {
+    display: flex;
+
+    .navigatorButton {
+      @include flex(center, center, row);
+      display: flex;
+      width: 50%;
+      height: 60px;
+      border: 1px solid $hover-color;
+      background-color: $lightLine-color;
+      color: $disabled-color;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .clicked {
+      border-bottom: none;
+      background-color: $white-color;
+      color: $primary-color;
+      font-weight: 800;
+    }
+  }
+}

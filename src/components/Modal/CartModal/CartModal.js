@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai';
-
 import './CartModal.scss';
 
 const CartModal = props => {
@@ -8,13 +7,13 @@ const CartModal = props => {
 
   const token = localStorage.getItem('token');
 
-  const [count, setCount] = useState(1);
+  const [quantity, setQuantity] = useState(1);
 
   const increaseCount = () => {
-    setCount(count => count + 1);
+    setQuantity(quantity => quantity + 1);
   };
   const decreaseCount = () => {
-    setCount(count => count - 1);
+    setQuantity(quantity => quantity - 1);
   };
 
   const closeHandler = e => {
@@ -22,21 +21,42 @@ const CartModal = props => {
     close();
   };
 
-  const postItemInfo = () => {
+  const postItemInfo = (productId, quantity) => {
     if (!token) {
-      alert('회원전용 서비스입니다!');
+      return alert('회원전용 서비스입니다!');
     }
+
+    fetch('http://10.58.52.133:3000/carts/input', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json;charset=utf-8' },
+      body: JSON.stringify({
+        productId: productId,
+        quantity: quantity,
+      }),
+    })
+      .then(response => {
+        if (response.ok === true) {
+          return response.json(), close();
+        }
+        throw new Error('에러 발생, check status code');
+      })
+      .catch(error => console.log(error));
   };
 
   return (
-    <div className="modalBackground">
-      <div className="cartModalBox">
+    <div className="modalBackground" onClick={closeHandler}>
+      <div
+        className="cartModalBox"
+        onClick={e => {
+          e.stopPropagation();
+        }}
+      >
         <div className="cartModalTopBox">
           <p className="cartContentsItem">{contents?.productName}</p>
           <div className="cartCountBox">
             <p className="cartItemPrice">{contents?.price + '원'}</p>
             <div className="cartCount">
-              {count <= 1 ? (
+              {quantity <= 1 ? (
                 <AiOutlineMinus
                   className="cartMinusIcon"
                   style={{ color: 'lightGray' }}
@@ -47,14 +67,14 @@ const CartModal = props => {
                   onClick={decreaseCount}
                 />
               )}
-              <p className="cartCounts">{count}</p>
+              <p className="cartCounts">{quantity}</p>
               <AiOutlinePlus className="cartPlusIcon" onClick={increaseCount} />
             </div>
           </div>
         </div>
         <div className="cartModalMiddleBox">
           <p className="cartSumText">합계</p>
-          <p className="cartSumVar">{count * contents?.price + '원'}</p>
+          <p className="cartSumVar">{quantity * contents?.price + '원'}</p>
         </div>
         {token ? (
           <p className="cartPointBox">
@@ -73,7 +93,7 @@ const CartModal = props => {
           <button
             className="cartModalRightBtn"
             onClick={() => {
-              postItemInfo();
+              postItemInfo(contents?.productId, quantity);
             }}
           >
             장바구니 담기

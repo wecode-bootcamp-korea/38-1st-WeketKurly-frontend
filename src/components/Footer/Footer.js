@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import './Footer.scss';
 
 const Footer = () => {
@@ -16,16 +15,16 @@ const Footer = () => {
 const FooterContents = () => {
   return (
     <div className="footerContents">
-      <FooterLeft />
+      <FooterCustomer />
       <FooterRight />
     </div>
   );
 };
 
-const FooterLeft = () => {
+const FooterCustomer = () => {
   return (
-    <div className="footerLeft">
-      <h2 className="footerLeftTitle">
+    <div className="footerCustomer">
+      <h2 className="footerCustomerTitle">
         고객행복센터 <span className="runTime">365일 오전 7시 - 오후 7시</span>
       </h2>
       <strong className="strong">1644-1107</strong>

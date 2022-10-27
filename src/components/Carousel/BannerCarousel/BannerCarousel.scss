@@ -1,0 +1,67 @@
+@import '../../../styles/variables.scss';
+
+.bannerCarousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  .bannerCarouselBox {
+    @include flex(space-between, center, null);
+
+    .bannerImg {
+      width: 100%;
+      height: 370px;
+      display: block;
+    }
+  }
+
+  .slideMinusBtn {
+    @include flex(center, center, null);
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 50%;
+    margin: auto 590px auto 0px;
+    z-index: 10;
+    width: 52px;
+    height: 52px;
+    transition: all 0.5s ease 0s;
+    border-radius: 52px;
+    opacity: 0.3;
+    background-color: black;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+
+    .slideMinusIcon {
+      color: white;
+      width: 25px;
+      height: 25px;
+      margin-right: 3px;
+    }
+  }
+
+  .slidePlusBtn {
+    @include flex(center, center, null);
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 50%;
+    margin: auto 0px auto 590px;
+    z-index: 10;
+    width: 52px;
+    height: 52px;
+    opacity: 0.3;
+    border-radius: 52px;
+    transition: all 0.5s ease 0s;
+    background-color: black;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+
+    .slidePlusIcon {
+      color: white;
+      width: 25px;
+      height: 25px;
+      margin-left: 3px;
+    }
+  }
+}

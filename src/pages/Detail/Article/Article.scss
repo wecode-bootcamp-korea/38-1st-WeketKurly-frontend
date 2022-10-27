@@ -1,0 +1,102 @@
+@import '/src/styles/variables';
+
+.detailArticle {
+  @include flex(space-between, null, row);
+  width: 1050px;
+
+  .itemImage {
+    position: relative;
+    width: 430px;
+    height: 552px;
+
+    .itemImageTag {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .itemDescription {
+    width: 560px;
+
+    .table {
+      width: 100%;
+    }
+
+    .select {
+      width: 100%;
+    }
+  }
+}
+
+.nameOfItem {
+  width: 100%;
+
+  .ship {
+    width: 500px;
+    margin-bottom: 6px;
+    color: rgb(153, 153, 153);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    line-height: 19px;
+  }
+
+  .titleContainer {
+    @include flex(space-between, center, row);
+
+    .itemName {
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    .share {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      border: 1px solid rgb(153, 153, 153);
+      border-radius: 50%;
+      background-color: transparent;
+      cursor: pointer;
+
+      .shareicon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  .shortDescription {
+    padding-top: 5px;
+    color: rgb(181, 181, 181);
+    font-style: 14px;
+    letter-spacing: -0.5px;
+    line-height: 19px;
+  }
+}
+
+.priceContainer {
+  @include flex(null, flex-end, row);
+  width: 100%;
+  height: 50px;
+  color: rgb(51, 51, 51);
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  line-height: 30px;
+
+  .price {
+    padding-right: 4px;
+    font-size: 28px;
+  }
+
+  .won {
+    font-size: 18px;
+    letter-spacing: -0.5px;
+  }
+}

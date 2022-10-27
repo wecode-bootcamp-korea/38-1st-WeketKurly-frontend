@@ -1,0 +1,91 @@
+@import '../../../styles/variables';
+
+.disItemContainer {
+  position: relative;
+  width: 340px;
+  height: 535px;
+  cursor: pointer;
+
+  .disItemImg {
+    width: 338px;
+    height: 434px;
+  }
+
+  .disItemIconBox {
+    @include flex(center, center, null);
+    position: absolute;
+    right: 25px;
+    bottom: 120px;
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    opacity: 0.7;
+    background-color: $subPrimary-color;
+  }
+
+  .disItemSpecialBox {
+    @include position(absolute, 0px, null, null, 0px);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 67px;
+    height: 32px;
+    opacity: 0.9;
+    background-color: $specialPrice-color;
+  }
+
+  .disItemSpecialText {
+    margin-top: 16px;
+    color: $white-color;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.43px;
+    text-align: center;
+  }
+
+  .disItemName {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.05;
+    line-height: 1.45;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .disItemDescription {
+    margin: 10px 0;
+    color: $devide-color;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: -0.05;
+    line-height: 1.45;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .disItemDiscountPrice {
+    margin: 0 8px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.45;
+  }
+
+  .discountRate {
+    color: $dicount-color;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.45;
+  }
+
+  .disItemPrice {
+    color: $lightGray-color;
+    text-decoration: line-through;
+  }
+
+  .reactIcon {
+    width: 23px;
+    height: 23px;
+    color: $white-color;
+  }
+}

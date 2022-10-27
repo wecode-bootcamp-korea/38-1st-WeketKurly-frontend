@@ -1,0 +1,77 @@
+@import '../../../styles/variables.scss';
+
+.itemCarousel {
+  position: relative;
+
+  .itemTitle {
+    color: $text-color;
+    font-size: 28px;
+    line-height: 1.15;
+    letter-spacing: -0.26px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .itemCarouselBox {
+    max-width: 1050px;
+    height: 434px;
+    overflow: hidden;
+
+    .itemList {
+      @include flex(space-between, center, null);
+      width: 201.2%;
+
+      .items {
+        width: 249px;
+        height: 412px;
+      }
+    }
+  }
+
+  .slideMinusBtn {
+    @include flex(center, center, null);
+    position: absolute;
+    z-index: 100;
+    border: 0px;
+    outline: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 60px;
+    top: calc(50% - 20px);
+    left: 0;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+
+    .slideMinusIcon {
+      width: 25px;
+      height: 25px;
+      margin-right: 3px;
+    }
+  }
+
+  .slidePlusBtn {
+    @include flex(center, center, null);
+    position: absolute;
+    z-index: 100;
+    border: 0px;
+    outline: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 60px;
+    top: calc(50% - 20px);
+    right: -50px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+
+    .slidePlusIcon {
+      width: 25px;
+      height: 25px;
+      margin-left: 3px;
+    }
+  }
+}

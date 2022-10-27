@@ -1,0 +1,120 @@
+@import '/src/styles/variables';
+
+.cartModalTopBox {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid rgb(244, 244, 244);
+
+  .cartContentsItem {
+    color: rgb(51, 51, 51);
+    font-size: 12px;
+    line-height: 19px;
+    word-break: break-all;
+  }
+
+  .cartCountBox {
+    @include flex(space-between, center, null);
+    width: 100%;
+
+    .cartItemPrice {
+      color: rgb(51, 51, 51);
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .cartCount {
+      @include flex(space-between, center, null);
+      width: 100px;
+      height: 36px;
+      padding: 0 10px;
+      border: 1px solid rgb(221, 223, 225);
+      border-radius: 3px;
+
+      .cartCounts {
+        margin-top: 5px;
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.cartModalMiddleBox {
+  @include flex(space-between, center, null);
+  width: 100%;
+
+  .cartSumText {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+
+  .cartSumVar {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+}
+
+.cartModalBottomBox {
+  @include flex(flex-end, null, row);
+  width: 100%;
+  margin-top: 25px;
+
+  .cartModalLeftBtn {
+    display: block;
+    width: 185px;
+    height: 52px;
+    padding: 0px 10px;
+    padding-top: 4px;
+    overflow: hidden;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(51, 51, 51);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .cartButton {
+    display: block;
+    width: 185px;
+    height: 52px;
+    padding: 10px 0 12px 0;
+    overflow: hidden;
+    border: 0px none;
+    border-radius: 3px;
+    background-color: $primary-color;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+.cartPointBox {
+  @include flex(end, center, null);
+  width: 100%;
+  margin-top: 5px;
+  color: rgb(51, 51, 51);
+  font-size: 15px;
+  line-height: 1.33;
+
+  .cartPointTag {
+    width: 38px;
+    height: 18px;
+    margin-right: 6px;
+    border-radius: 9px;
+    background-color: rgb(255, 191, 0);
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+  }
+}

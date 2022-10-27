@@ -1,0 +1,39 @@
+@import '../../styles/variables';
+
+.listPageContainer {
+  width: 100%;
+  margin-top: 50px;
+  @include flex(center, null, row);
+
+  .listWrapper {
+    width: 1050px;
+    height: 300vh;
+    margin-top: 100px;
+    @include flex(flex-start, center, column);
+
+    .listTitle {
+      display: block;
+      margin-top: 50px;
+      color: $text-color;
+      text-align: center;
+      @include font($size: 28px, $height: 1.8, $spacing: -1px, $weight: 500);
+    }
+
+    .contentContainer {
+      width: 100%;
+      margin-top: 50px;
+      margin-bottom: 75px;
+
+      .listGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 249px);
+        gap: 24px 18px;
+        width: 100%;
+
+        .listGridCell {
+          height: 538px;
+        }
+      }
+    }
+  }
+}

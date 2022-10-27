@@ -1,0 +1,84 @@
+@import '/src/styles/variables';
+
+.toolTipContainer {
+  position: absolute;
+  z-index: 100;
+  top: 50px;
+  right: 0px;
+  width: 260px;
+
+  padding: 20px;
+  border-radius: 3px;
+  background-color: $white-color;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.099) 0px 3px 7px -3px;
+  @include flex(null, space-between, column);
+
+  .toolTipLogos {
+    height: 50px;
+    @include flex(space-between, null, row);
+    margin-bottom: 20px;
+
+    .toolTipText {
+      font-size: 12px;
+    }
+
+    .toolTiplogoTweeter {
+      width: 90px;
+      height: 40px;
+      margin-right: 15px;
+      @include flex(space-between, center, row);
+
+      .tweeter {
+        display: inline-block;
+        width: 40px;
+        height: 100%;
+        background-image: url(https://res.kurly.com/mobile/service/goodsview/1804/ico_twitter.png);
+        background-size: 100%;
+      }
+    }
+
+    .toolTiplogoFacebook {
+      width: 90px;
+      height: 40px;
+      @include flex(space-between, center, row);
+
+      .facebook {
+        display: inline-block;
+        width: 40px;
+        height: 100%;
+        background-image: url(https://res.kurly.com/mobile/service/goodsview/1804/ico_facebook.png);
+        background-size: 100%;
+      }
+    }
+  }
+
+  .toolTipURLButton {
+    display: inline;
+    width: 100%;
+    height: 35px;
+
+    @include flex(null, flex-end, row);
+
+    .toolTipURL {
+      width: 130px;
+      height: 35px;
+      padding-left: 10px;
+      border: 1px solid $gray-color;
+      border-right: transparent;
+      border-radius: 0;
+    }
+
+    .toolTipButton {
+      width: 90px;
+      height: 35px;
+      border: 1px solid $primary-color;
+      background: inherit;
+      background-color: $white-color;
+      color: $primary-color;
+      line-height: 33px;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+}

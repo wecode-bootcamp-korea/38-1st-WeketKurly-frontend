@@ -1,0 +1,60 @@
+{
+  "getMainCategoriesAllProducts": [
+    {
+      "productId": 1,
+      "productName": "친환경 당근 500g",
+      "thumbnailImageUrl": "https://images.unsplash.com/photo-1556559214-9d7db920d2eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80",
+      "shortDescription": "껍질째 먹을 수 있는 친환경 흙당근 (500g 내외)",
+      "productPrice": "4190"
+    },
+    {
+      "productId": 2,
+      "productName": "[KF365] 밤고구마 800g",
+      "thumbnailImageUrl": "https://images.unsplash.com/photo-1602597190461-43774583d3c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80",
+      "shortDescription": "포근하고 고소한 고구마(1봉/800g)",
+      "productPrice": "3900"
+    },
+    {
+      "productId": 3,
+      "productName": "친환경 베이비 시금치 100g",
+      "thumbnailImageUrl": "https://images.unsplash.com/photo-1580912534328-fbc00d6f7e9f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2067&q=80",
+      "shortDescription": "작은 잎에 농축된 풍부한 영양",
+      "productPrice": "4000"
+    },
+    {
+      "productId": 4,
+      "productName": "[KF365] 파프리카 2입",
+      "thumbnailImageUrl": "https://images.unsplash.com/photo-1545092844-0c99aa3b6cab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+      "shortDescription": "믿고 먹을 수 있는 상품을 합리적인 가격에, KF365",
+      "productPrice": "5480"
+    },
+    {
+      "productId": 5,
+      "productName": "[KF365] 양파 1.8kg",
+      "thumbnailImageUrl": "https://images.unsplash.com/photo-1498588747262-0f2241707d13?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+      "shortDescription": "믿고 먹을 수 있는 상품을 합리적인 가격에, KF365",
+      "productPrice": "4980"
+    },
+    {
+      "productId": 6,
+      "productName": "[KF365] 다다기오이 3입",
+      "thumbnailImageUrl": "https://pixabay.com/get/g5c9a1a6573e07cab0e992fe4cfe7d74b8c0cdf39b381f36794ee2cee74586aaf400b43d62c8014a034b84594a9b3308a6f139ed54d80612107e9736fbb3234d43c7a8e9946fa35814a7fe8959236d8e7_640.png",
+      "shortDescription": "믿고 먹을 수 있는 상품을 합리적인 가격에, KF365",
+      "productPrice": "3590"
+    },
+    {
+      "productId": 7,
+      "productName": "한끼 감자 300g",
+      "thumbnailImageUrl": "https://pixabay.com/get/g2fdcfcbbf7b9fe4340c03dc9e15cb3dd78af8c109b8d87722ea67160e1a487bd324f05413aef48a6e62d5d1da1a90e990da21519f1d22a7cc58cc43aa9ce70c21cefa065b55bd5cd5c2f368a5a0854c7_640.jpg",
+      "shortDescription": "보관 걱정 없이 소용량 포장으로",
+      "productPrice": "1990"
+    },
+    {
+      "productId": 8,
+      "productName": "[KF365] 새송이버섯 400g",
+      "thumbnailImageUrl": "https://pixabay.com/get/gb79abaeaa004ee93873b58542ecd58392378f26280dd4f5c258d4c1c96e310bfabbfab50c06fe3b63c9ce3d454280db2f8a8354f5bd334a422161bbd6459b5fc210761b058c40e39ea661a4195e3f994_640.jpg",
+      "shortDescription": "믿고 먹을 수 있는 상품을 합리적인 가격에, KF365",
+      "productPrice": "3480"
+    }
+  ]
+}
