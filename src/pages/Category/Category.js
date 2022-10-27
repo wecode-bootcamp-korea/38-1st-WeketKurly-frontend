@@ -6,13 +6,15 @@ import './Category.scss';
 const Category = () => {
   const [categories, setCategories] = useState([]);
   const [categoryId, setCategoryId] = useState(null);
+
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('/data/CATEGORY.json')
+    fetch('http://10.58.52.148:3000/categories')
+      // fetch('/data/CATEGORY.json')
       .then(res => res.json())
       .then(result => {
-        setCategories(result);
+        setCategories(result.data);
       });
   }, []);
 
@@ -20,29 +22,29 @@ const Category = () => {
     const subCategory = categories.find(
       category => +category.mainCategoriesId === +id
     );
-
     if (!subCategory) return [];
-    else return subCategory.subCategory;
+    else return subCategory.subCategories;
   };
 
   return (
     <div className="categoryContainer">
       <div className="mainCategoryFrame">
-        {categories.map(category => {
-          return (
-            <li
-              key={category.id}
-              id={category.mainCategoriesId}
-              className="mainCategoriesName"
-              onMouseEnter={() => {
-                setCategoryId(category.mainCategoriesId);
-              }}
-              onClick={() => navigate(`/list/${category.mainCategoriesId}`)}
-            >
-              {category.mainCategoriesName}
-            </li>
-          );
-        })}
+        {categories &&
+          categories.map(category => {
+            return (
+              <li
+                key={category.mainCategoriesId}
+                id={category.mainCategoriesId}
+                className="mainCategoriesName"
+                onMouseEnter={() => {
+                  setCategoryId(category.mainCategoriesId);
+                }}
+                onClick={() => navigate(`/list/${category.mainCategoriesId}`)}
+              >
+                {category.mainCategoriesName}
+              </li>
+            );
+          })}
       </div>
       <div className="subcategoryFrame" onMouseLeave={() => setCategoryId(0)}>
         {findSubCategory(categoryId).map(category => {
@@ -51,7 +53,6 @@ const Category = () => {
               key={category.subCategoriesId}
               id={category.subCategoriesId}
               className="subCategoriesName"
-              onClick={() => navigate(`/list/sub/${category.subCategoriesId}`)}
             >
               {category?.subCategoriesName}
             </li>
