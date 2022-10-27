@@ -28,7 +28,7 @@ const BannerCarousel = () => {
 
   useEffect(() => {
     slideRef.current.style.transition = 'all 0.4s ease-in-out';
-    slideRef.current.style.transform = `translateX(-${slide * 100}%)`;
+    slideRef.current.style.transform = `translateX(-${slide * 20}%)`;
   }, [slide]);
 
   const showNextSlide = () => {
@@ -40,15 +40,17 @@ const BannerCarousel = () => {
 
   return (
     <div className="bannerCarousel">
-      <div className="bannerCarouselBox" ref={slideRef}>
-        {bannerList.map(banner => (
-          <img
-            className="bannerImg"
-            src={banner.image_url}
-            alt="배너이미지"
-            key={banner.id}
-          />
-        ))}
+      <div className="bannerCarouselBox">
+        <div className="bannerList" ref={slideRef}>
+          {bannerList.map(banner => (
+            <img
+              className="bannerImg"
+              src={banner.image_url}
+              alt="배너이미지"
+              key={banner.id}
+            />
+          ))}
+        </div>
       </div>
 
       {slide !== 0 && (

@@ -1,37 +1,44 @@
-[
-  {
-    "productId": 1,
-    "productName": "냉동 국산 유기농 블루베리 500g",
-    "thumbnailImageUrl": "https://pixabay.com/get/g7a67c5bf37bd8ec10070cfcd3a59f01ac801babbd9ef21076ea11d9ef4a0458d0b299a3b5f2ee83859dd4142ed0c02908f65acd9afda436b1a4a85ef702e7b8b6af825ed9d5a13108754bf84bd7f525c_1280.jpg",
-    "shortDescription": "냉동실에서 간편하게 꺼내먹는 '국산' 유기농 냉동 블루베리(1봉/500g)",
-    "price": "20000"
-  },
-  {
-    "productId": 2,
-    "productName": "냉동 국산 유기농 블루베리 500g",
-    "thumbnailImageUrl": "https://pixabay.com/get/g7a67c5bf37bd8ec10070cfcd3a59f01ac801babbd9ef21076ea11d9ef4a0458d0b299a3b5f2ee83859dd4142ed0c02908f65acd9afda436b1a4a85ef702e7b8b6af825ed9d5a13108754bf84bd7f525c_1280.jpg",
-    "shortDescription": "냉동실에서 간편하게 꺼내먹는 '국산' 유기농 냉동 블루베리(1봉/500g)",
-    "price": "20000"
-  },
-  {
-    "productId": 3,
-    "productName": "냉동 국산 유기농 블루베리 500g",
-    "thumbnailImageUrl": "https://pixabay.com/get/g7a67c5bf37bd8ec10070cfcd3a59f01ac801babbd9ef21076ea11d9ef4a0458d0b299a3b5f2ee83859dd4142ed0c02908f65acd9afda436b1a4a85ef702e7b8b6af825ed9d5a13108754bf84bd7f525c_1280.jpg",
-    "shortDescription": "냉동실에서 간편하게 꺼내먹는 '국산' 유기농 냉동 블루베리(1봉/500g)",
-    "price": "20000"
-  },
-  {
-    "productId": 4,
-    "productName": "냉동 국산 유기농 블루베리 500g",
-    "thumbnailImageUrl": "https://pixabay.com/get/g7a67c5bf37bd8ec10070cfcd3a59f01ac801babbd9ef21076ea11d9ef4a0458d0b299a3b5f2ee83859dd4142ed0c02908f65acd9afda436b1a4a85ef702e7b8b6af825ed9d5a13108754bf84bd7f525c_1280.jpg",
-    "shortDescription": "냉동실에서 간편하게 꺼내먹는 '국산' 유기농 냉동 블루베리(1봉/500g)",
-    "price": "20000"
-  },
-  {
-    "productId": 5,
-    "productName": "냉동 국산 유기농 블루베리 500g",
-    "thumbnailImageUrl": "https://pixabay.com/get/g7a67c5bf37bd8ec10070cfcd3a59f01ac801babbd9ef21076ea11d9ef4a0458d0b299a3b5f2ee83859dd4142ed0c02908f65acd9afda436b1a4a85ef702e7b8b6af825ed9d5a13108754bf84bd7f525c_1280.jpg",
-    "shortDescription": "냉동실에서 간편하게 꺼내먹는 '국산' 유기농 냉동 블루베리(1봉/500g)",
-    "price": "20000"
-  }
-]
+{
+  "data": [
+    {
+      "cartId": 0,
+      "quantity": 1,
+      "packing_type_id": 1,
+      "name": "냉동 국산 유기농 블루베리 500g",
+      "thumnail_image_url": "https://pixabay.com/get/g7a67c5bf37bd8ec10070cfcd3a59f01ac801babbd9ef21076ea11d9ef4a0458d0b299a3b5f2ee83859dd4142ed0c02908f65acd9afda436b1a4a85ef702e7b8b6af825ed9d5a13108754bf84bd7f525c_1280.jpg",
+      "price": 20000
+    },
+    {
+      "cartId": 1,
+      "quantity": 1,
+      "packing_type_id": 2,
+      "name": "냉동 국산 유기농 블루베리 500g",
+      "thumnail_image_url": "https://pixabay.com/get/g7a67c5bf37bd8ec10070cfcd3a59f01ac801babbd9ef21076ea11d9ef4a0458d0b299a3b5f2ee83859dd4142ed0c02908f65acd9afda436b1a4a85ef702e7b8b6af825ed9d5a13108754bf84bd7f525c_1280.jpg",
+      "price": 20000
+    },
+    {
+      "cartId": 2,
+      "quantity": 1,
+      "packing_type_id": 2,
+      "name": "냉동 국산 유기농 블루베리 500g",
+      "thumnail_image_url": "https://pixabay.com/get/g7a67c5bf37bd8ec10070cfcd3a59f01ac801babbd9ef21076ea11d9ef4a0458d0b299a3b5f2ee83859dd4142ed0c02908f65acd9afda436b1a4a85ef702e7b8b6af825ed9d5a13108754bf84bd7f525c_1280.jpg",
+      "price": 20000
+    },
+    {
+      "cartId": 3,
+      "quantity": 1,
+      "packing_type_id": 3,
+      "name": "냉동 국산 유기농 블루베리 500g",
+      "thumnail_image_url": "https://pixabay.com/get/g7a67c5bf37bd8ec10070cfcd3a59f01ac801babbd9ef21076ea11d9ef4a0458d0b299a3b5f2ee83859dd4142ed0c02908f65acd9afda436b1a4a85ef702e7b8b6af825ed9d5a13108754bf84bd7f525c_1280.jpg",
+      "price": 20000
+    },
+    {
+      "cartId": 4,
+      "quantity": 1,
+      "packing_type_id": 1,
+      "name": "냉동 국산 유기농 블루베리 500g",
+      "thumnail_image_url": "https://pixabay.com/get/g7a67c5bf37bd8ec10070cfcd3a59f01ac801babbd9ef21076ea11d9ef4a0458d0b299a3b5f2ee83859dd4142ed0c02908f65acd9afda436b1a4a85ef702e7b8b6af825ed9d5a13108754bf84bd7f525c_1280.jpg",
+      "price": 20000
+    }
+  ]
+}

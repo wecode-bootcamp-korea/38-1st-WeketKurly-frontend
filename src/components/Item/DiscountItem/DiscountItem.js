@@ -24,8 +24,12 @@ const DiscountItem = ({ contents }) => {
       <p className="disItemDescription">{contents?.shortDescription}</p>
       <p className="disItemName">{contents?.productName}</p>
       <span className="discountRate">{contents?.discount + `%`}</span>
-      <span className="disItemDiscountPrice">{discountPrice + `원`}</span>
-      <span className="disItemPrice">{contents?.productPrice}</span>
+      <span className="disItemDiscountPrice">
+        {discountPrice.toLocaleString() + `원`}
+      </span>
+      <span className="disItemPrice">
+        {contents?.productPrice.toLocaleString()}
+      </span>
     </div>
   );
 };

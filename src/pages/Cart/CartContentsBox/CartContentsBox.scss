@@ -1,0 +1,7 @@
+@import '../../../styles/variables.scss';
+
+.cartContentsBox {
+  @include flex(space-between, null, null);
+  width: 1050px;
+  margin-top: 50px;
+}

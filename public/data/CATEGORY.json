@@ -1,0 +1,78 @@
+[
+  {
+    "mainCategoriesId": 1,
+    "mainCategoriesName": "채소",
+    "subCategory": [
+      {
+        "subCategoriesId": 1,
+        "subCategoriesName": "친환경"
+      },
+      {
+        "subCategoriesId": 2,
+        "subCategoriesName": "고구마・감자・당근"
+      },
+      {
+        "subCategoriesId": 3,
+        "subCategoriesName": "시금치・쌈채소・나물"
+      },
+      {
+        "subCategoriesId": 4,
+        "subCategoriesName": "브로콜리・파프리카・양배추"
+      },
+      {
+        "subCategoriesId": 5,
+        "subCategoriesName": "양파・대파・마늘・배추"
+      },
+      {
+        "subCategoriesId": 6,
+        "subCategoriesName": "오이・호박・고추"
+      },
+      {
+        "subCategoriesId": 7,
+        "subCategoriesName": "냉동・이색・간편채소"
+      },
+      {
+        "subCategoriesId": 8,
+        "subCategoriesName": "콩나물・버섯"
+      }
+    ]
+  },
+  {
+    "mainCategoriesId": 2,
+    "mainCategoriesName": "해산물",
+    "subCategory": [
+      {
+        "subCategoriesId": 1,
+        "subCategoriesName": "친환경"
+      },
+      {
+        "subCategoriesId": 2,
+        "subCategoriesName": "고등어"
+      },
+      {
+        "subCategoriesId": 3,
+        "subCategoriesName": "참치"
+      },
+      {
+        "subCategoriesId": 4,
+        "subCategoriesName": "연어"
+      },
+      {
+        "subCategoriesId": 5,
+        "subCategoriesName": "삼치"
+      },
+      {
+        "subCategoriesId": 6,
+        "subCategoriesName": "가리비"
+      },
+      {
+        "subCategoriesId": 7,
+        "subCategoriesName": "냉동・이색・간편채소"
+      },
+      {
+        "subCategoriesId": 8,
+        "subCategoriesName": "콩나물・버섯"
+      }
+    ]
+  }
+]

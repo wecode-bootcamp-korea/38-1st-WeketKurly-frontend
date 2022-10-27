@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import API from '../../../config';
 import { AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai';
 import './CartModal.scss';
 
 const CartModal = props => {
-  const { close, contents } = props;
+  const { close, contents, setOpenToast } = props;
 
   const token = localStorage.getItem('token');
 
@@ -26,9 +27,12 @@ const CartModal = props => {
       return alert('회원전용 서비스입니다!');
     }
 
-    fetch('http://10.58.52.133:3000/carts/input', {
+    fetch(`${API.postCarts}`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json;charset=utf-8' },
+      headers: {
+        'Content-Type': 'application/json;charset=utf-8',
+        Authorization: token,
+      },
       body: JSON.stringify({
         productId: productId,
         quantity: quantity,
@@ -36,7 +40,7 @@ const CartModal = props => {
     })
       .then(response => {
         if (response.ok === true) {
-          return response.json(), close();
+          return response.json(), close(), setOpenToast(true);
         }
         throw new Error('에러 발생, check status code');
       })
@@ -54,7 +58,9 @@ const CartModal = props => {
         <div className="cartModalTopBox">
           <p className="cartContentsItem">{contents?.productName}</p>
           <div className="cartCountBox">
-            <p className="cartItemPrice">{contents?.price + '원'}</p>
+            <p className="cartItemPrice">
+              {(contents?.price).toLocaleString() + '원'}
+            </p>
             <div className="cartCount">
               {quantity <= 1 ? (
                 <AiOutlineMinus
@@ -74,7 +80,9 @@ const CartModal = props => {
         </div>
         <div className="cartModalMiddleBox">
           <p className="cartSumText">합계</p>
-          <p className="cartSumVar">{quantity * contents?.price + '원'}</p>
+          <p className="cartSumVar">
+            {(quantity * contents?.price).toLocaleString() + '원'}
+          </p>
         </div>
         {token ? (
           <p className="cartPointBox">

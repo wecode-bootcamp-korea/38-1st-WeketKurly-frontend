@@ -19,7 +19,7 @@ const DefaultItem = ({ contents, onOpenModal }) => {
         <BsCart2 className="reactIcon" />
       </div>
       <p className="itemDescription">{contents?.productName}</p>
-      <p className="itemPrice">{contents?.price + `원`}</p>
+      <p className="itemPrice">{(contents?.price).toLocaleString() + `원`}</p>
     </div>
   );
 };

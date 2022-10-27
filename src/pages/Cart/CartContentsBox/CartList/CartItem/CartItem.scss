@@ -1,0 +1,69 @@
+@import '../../../../../styles/variables.scss';
+
+.cartItem {
+  @include flex(space-between, center, null);
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid $lightGray-color;
+
+  .cartItemImg {
+    width: 60px;
+    height: 78px;
+  }
+
+  .cartItemName {
+    width: 345px;
+    padding-top: 2px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    overflow: hidden;
+    word-break: break-all;
+  }
+
+  .cartItemCount {
+    @include flex(space-between, center, null);
+    width: 90px;
+    height: 30px;
+    border: 1px solid $line-color;
+    border-radius: 3px;
+    padding: 0 10px;
+    background-color: white;
+
+    .cartCounts {
+      font-size: 16px;
+      font-weight: 500;
+      margin-top: 3px;
+    }
+
+    .cartCountIcon {
+      cursor: pointer;
+      border: none;
+      background-color: white;
+      margin-top: 3px;
+    }
+    .cartCountIcon:disabled {
+      border: none;
+      background-color: white;
+      margin-top: 3px;
+    }
+  }
+
+  .cartItemPrice {
+    padding-top: 3px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: $text-color;
+    width: 100px;
+    text-align: end;
+  }
+
+  .deleteIcon {
+    width: 25px;
+    height: 25px;
+    color: $gray-color;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+}

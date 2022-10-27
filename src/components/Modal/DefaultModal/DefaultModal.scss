@@ -52,14 +52,13 @@
       .modalDeleteBtn {
         @include flex(center, center, null);
         width: 180px;
-        height: 55px;
+        height: 54px;
         border: none;
         font-size: 16px;
         font-weight: 600;
         color: $primary-color;
         background-color: white;
         border-right: 1px solid rgb(245, 245, 245);
-        border-top: 1px solid rgb(245, 245, 245);
         border-bottom-left-radius: 10px;
         cursor: pointer;
       }

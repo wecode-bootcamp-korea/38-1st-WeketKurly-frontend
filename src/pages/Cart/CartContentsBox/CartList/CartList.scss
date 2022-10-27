@@ -1,0 +1,50 @@
+@import '../../../../styles/variables.scss';
+
+.cartLists {
+  width: 742px;
+  border-top: 2px solid $primary-color;
+
+  .cartListDropTab {
+    @include flex(space-between, center, null);
+    width: 100%;
+    margin: 20px 0;
+
+    .cartListIconBox {
+      @include flex(space-between, center, null);
+      width: 106px;
+      height: 30px;
+
+      .frozenIcon {
+        width: 28px;
+        height: 28px;
+        color: $frozen-color;
+      }
+      .chilledIcon {
+        width: 28px;
+        height: 28px;
+        color: $chilled-color;
+      }
+      .sunIcon {
+        width: 28px;
+        height: 28px;
+        color: $sun-color;
+      }
+      .cartListText {
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 2px;
+      }
+    }
+
+    .arrowIcon {
+      width: 28px;
+      height: 28px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  }
+
+  .cartItemList {
+    width: 100%;
+  }
+}

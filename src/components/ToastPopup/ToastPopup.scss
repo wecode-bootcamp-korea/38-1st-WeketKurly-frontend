@@ -2,9 +2,9 @@
 
 .toastPopup {
   @include flex(space-between, left, null);
-  position: absolute;
-  top: 150px;
-  right: 15px;
+  position: fixed;
+  top: 7%;
+  right: -7%;
   padding: 20px;
   min-width: 350px;
   transform: translate(-50%, -50%);
@@ -13,6 +13,7 @@
   border: 1px solid $gray-color;
   z-index: 10000;
   animation: toastAnimation 0.7s;
+  border: 1px solid $primary-color;
 
   .toastImg {
     width: 46px;

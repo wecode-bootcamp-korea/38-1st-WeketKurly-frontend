@@ -30,7 +30,7 @@ const ItemCarousel = ({ contents, title, onOpenModal }) => {
       <p className="itemTitle">{title}</p>
       <div className="itemCarouselBox">
         <div className="itemList" ref={slideRef}>
-          {contents?.item?.map((list, idx) => (
+          {contents?.item?.map(list => (
             <Item
               contents={list}
               key={list.productId}

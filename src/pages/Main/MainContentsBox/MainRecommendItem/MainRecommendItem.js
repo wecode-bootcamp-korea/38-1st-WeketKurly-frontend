@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Carousel from '../../../../components/Carousel/Carousel';
 import Modal from '../../../../components/Modal/Modal';
+import ToastPopup from '../../../../components/ToastPopup/ToastPopup';
 import API from '../../../../config';
 import './MainRecommendItem.scss';
 
@@ -8,6 +9,7 @@ const MainRecommendItem = () => {
   const [itemList, setItemList] = useState([]);
   const [openModal, setOpenModal] = useState(false);
   const [modalItem, setModalItem] = useState({});
+  const [openToast, setOpenToast] = useState(false);
 
   useEffect(() => {
     fetch(`${API.mainItem}`, {
@@ -38,7 +40,21 @@ const MainRecommendItem = () => {
         onOpenModal={handleOpenModal}
       />
       {openModal && (
-        <Modal contents={modalItem} type="cart" close={handleCloseModal} />
+        <Modal
+          contents={modalItem}
+          type="cart"
+          close={handleCloseModal}
+          openToast={openToast}
+          setOpenToast={setOpenToast}
+        />
+      )}
+      {openToast && (
+        <ToastPopup
+          openToast={openToast}
+          setOpenToast={setOpenToast}
+          imgUrl={modalItem.thumbnailImageUrl}
+          name={modalItem.productName}
+        />
       )}
     </div>
   );

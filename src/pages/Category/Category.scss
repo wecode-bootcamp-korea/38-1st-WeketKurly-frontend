@@ -1,0 +1,42 @@
+@import '../../styles/variables.scss';
+
+.categoryContainer {
+  display: flex;
+}
+.mainCategoryFrame {
+  background-color: $white-color;
+  height: 100%;
+  &:hover {
+    border-right: none;
+  }
+  .mainCategoriesName {
+    padding: 10px;
+    background-color: $white-color;
+    border-left: 1px solid #f7f7f7;
+    border-right: 1px solid #f7f7f7;
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    &:hover {
+      background-color: #f7f7f7;
+      font-weight: bold;
+      color: $primary-color;
+    }
+  }
+}
+.subcategoryFrame {
+  .subCategoriesName {
+    width: 200px;
+    @include flex(null, null, column);
+    padding: 10px;
+    background-color: #f7f7f7;
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    &:hover {
+      color: $primary-color;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+}

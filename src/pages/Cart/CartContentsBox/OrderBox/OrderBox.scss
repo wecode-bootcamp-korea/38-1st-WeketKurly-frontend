@@ -1,0 +1,78 @@
+@import '../../../../styles/variables.scss';
+
+.orderBox {
+  width: 284px;
+  height: 598px;
+
+  .orderPriceBox {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid $primary-color;
+    border-radius: 3px;
+
+    .orderItemPrice {
+      @include flex(space-between, center, null);
+      width: 100%;
+      height: 50px;
+    }
+
+    .orderItemDiscount {
+      @include flex(space-between, center, null);
+      width: 100%;
+      height: 50px;
+      padding-top: 6px;
+    }
+
+    .orderDeliveryFee {
+      @include flex(space-between, center, null);
+      width: 100%;
+      height: 50px;
+      padding-top: 10px;
+      margin-bottom: 30px;
+    }
+
+    .orderTotalPrice {
+      @include flex(space-between, center, null);
+      width: 100%;
+      height: 50px;
+      padding-top: 30px;
+      border-top: 1px solid $primary-color;
+    }
+
+    .orderText {
+      font-size: 18px;
+      line-height: 24px;
+      white-space: nowrap;
+    }
+
+    .orderPriceText {
+      font-size: 20px;
+      line-height: 24px;
+      white-space: nowrap;
+      margin-right: 5px;
+    }
+
+    .orderTotalPriceText {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 24px;
+      white-space: nowrap;
+      margin-right: 5px;
+    }
+  }
+
+  .orderBtn {
+    display: block;
+    padding: 0px 10px;
+    text-align: center;
+    width: 100%;
+    height: 56px;
+    border-radius: 3px;
+    color: $white-color;
+    background-color: $primary-color;
+    border: 0px none;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+}

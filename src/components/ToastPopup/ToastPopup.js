@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './ToastPopup.scss';
 
 const ToastPopup = ({ imgUrl, name, openToast, setOpenToast }) => {
   const [animation, setAnimation] = useState(false);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (openToast) {
@@ -17,11 +20,18 @@ const ToastPopup = ({ imgUrl, name, openToast, setOpenToast }) => {
   }, []);
 
   return (
-    <div className={`toastPopup ${animation ? 'toastUnmount' : ''}`}>
-      <img className="toastImg" src={imgUrl} />
-      <div className="toastTextBox">
-        <p className="toastName">{name}</p>
-        <p className="toastMsg">장바구니에 상품이 담겼습니다</p>
+    <div className="toastWrapper">
+      <div
+        className={`toastPopup ${animation ? 'toastUnmount' : ''}`}
+        onClick={() => {
+          navigate(`/cart`);
+        }}
+      >
+        <img className="toastImg" src={imgUrl} />
+        <div className="toastTextBox">
+          <p className="toastName">{name}</p>
+          <p className="toastMsg">장바구니에 상품이 담겼습니다</p>
+        </div>
       </div>
     </div>
   );

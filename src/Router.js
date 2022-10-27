@@ -8,7 +8,6 @@ import Main from './pages/Main/Main';
 import Detail from './pages/Detail/Detail';
 import Mypage from './pages/Mypage/Mypage';
 import Cart from './pages/Cart/Cart';
-import List from './pages/List/List';
 
 const Router = () => {
   return (
@@ -20,11 +19,6 @@ const Router = () => {
         <Route path="/detail" element={<Detail />} />
         <Route path="/mypage" element={<Mypage />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/list" element={<List />}>
-          <Route index element={<List />} />
-          <Route path="/list/sub/:subcategoriesId" element={<List />} />
-        </Route>
-        <Route path="/products/detail/:id" element={<Detail />} />
       </Routes>
     </BrowserRouter>
   );

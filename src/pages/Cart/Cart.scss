@@ -1,0 +1,13 @@
+@import '../../styles/variables.scss';
+
+.cart {
+  @include flex(center, center, column);
+  width: 100%;
+
+  .cartTitle {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 35px;
+    padding-top: 210px;
+  }
+}
