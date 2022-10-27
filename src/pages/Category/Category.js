@@ -1,10 +1,12 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Category.scss';
 
 const Category = () => {
   const [categories, setCategories] = useState([]);
   const [categoryId, setCategoryId] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch('/data/CATEGORY.json')
@@ -35,6 +37,7 @@ const Category = () => {
               onMouseEnter={() => {
                 setCategoryId(category.mainCategoriesId);
               }}
+              onClick={() => navigate(`/list/${category.mainCategoriesId}`)}
             >
               {category.mainCategoriesName}
             </li>
@@ -48,6 +51,7 @@ const Category = () => {
               key={category.subCategoriesId}
               id={category.subCategoriesId}
               className="subCategoriesName"
+              onClick={() => navigate(`/list/sub/${category.subCategoriesId}`)}
             >
               {category?.subCategoriesName}
             </li>
